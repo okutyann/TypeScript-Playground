@@ -41,3 +41,10 @@ fruits2.push(1);
 
 //any型は何でもあり
 const fruits3: any[] = ["Apple", "banana", "grap", 1];
+
+const book = ["business", 1500, false];
+//Tuple型(型注釈のみ)
+const book2: [string, number, boolean] = ["business", 1500, false];
+
+//初期値は厳しいが追加するときはゆるゆるのためエラーでない
+book2.push(21);
