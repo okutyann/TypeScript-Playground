@@ -31,3 +31,13 @@ const person2: object = {
 };
 //エラーでる
 console.log(person2.age);
+
+const fruits = ["Apple", "banana", "grap"];
+
+//予期していない型をいれない
+const fruits2: string[] = ["Apple", "banana", "grap"];
+fruits2.push("orange");
+fruits2.push(1);
+
+//any型は何でもあり
+const fruits3: any[] = ["Apple", "banana", "grap", 1];
