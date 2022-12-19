@@ -80,3 +80,17 @@ enum CoffeeSize3 {
   GRANDE,
   VENTI,
 }
+
+//どんな型にもなるany型
+let anyting: any = true;
+anyting = "hell";
+anyting = [21, "hello", false];
+
+//基本はオブジェクトは途中から変更ができないがそれもできちゃう
+anyting = {};
+anyting.asdg = "asdg";
+
+//anyはなるべく使わない
+//Typescriptではanyはお手上げ状態（javascriptに戻したいときは便利）
+let banana = "banana";
+banana = anyting;
