@@ -48,3 +48,35 @@ const book2: [string, number, boolean] = ["business", 1500, false];
 
 //初期値は厳しいが追加するときはゆるゆるのためエラーでない
 book2.push(21);
+
+const CoffeSize = {
+  SHORT: "SHORT",
+  TALL: "TALL",
+  GRANDE: "GRANDE",
+  VENTI: "VENTI",
+};
+const coffee = {
+  hot: true,
+  size: CoffeSize.TALL,
+};
+
+//列挙型は特定のグループのみを受け入れる
+enum CoffeeSize2 {
+  SHORT = "SHORT",
+  TALL = "TALL",
+  GRANDE = "GRANDE",
+  VENTI = "VENTI",
+}
+const coffee2 = {
+  hot: true,
+  size: CoffeeSize2.TALL,
+};
+coffee2.size = CoffeeSize2.GRANDE;
+
+//数字になる
+enum CoffeeSize3 {
+  SHORT,
+  TALL,
+  GRANDE,
+  VENTI,
+}
