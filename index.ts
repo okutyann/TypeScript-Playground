@@ -94,3 +94,7 @@ anyting.asdg = "asdg";
 //Typescriptではanyはお手上げ状態（javascriptに戻したいときは便利）
 let banana = "banana";
 banana = anyting;
+
+//Union型（下記はnumberもstringも使う）
+let unionType: number | string = 10;
+let unionTypes: (number | string)[] = [21, "hello"];
