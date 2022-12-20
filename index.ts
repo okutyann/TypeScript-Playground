@@ -98,3 +98,37 @@ banana = anyting;
 //Union型（下記はnumberもstringも使う）
 let unionType: number | string = 10;
 let unionTypes: (number | string)[] = [21, "hello"];
+
+//特定の値のみ取り扱う
+//constにした瞬間Literal型になる
+//下記の場合はappleしか扱えない
+const apple: "apple" = "apple";
+const orange: "orange" = "grap";
+
+//enum型
+enum clothSize2 {
+  small = "small",
+  miium = "miium",
+  large = "large",
+}
+
+const cloth2 = {
+  color: "white",
+  size: clothSize2.large,
+};
+
+//Union型とLiteral型の組み合わせ
+let clothSize: "small" | "miidum" | "large" = "large";
+
+const cloth = {
+  color: "white",
+  size: clothSize, //enum型みたいにclothSize.largeはできない
+};
+
+const cloth3: {
+  color: string;
+  size: "small" | "miidum" | "large";
+} = {
+  color: "white",
+  size: "miidum",
+};
