@@ -141,3 +141,18 @@ const cloth3: {
 function add(num1: number, num2: number): number {
   return num1 + num2;
 }
+
+//void型（何も返さないと言いつつundefinedが返る）
+function sayHell() {
+  console.log("hello");
+}
+
+//undefinedはreturnがないと使えない
+function sayHell2(): undefined {
+  console.log("hello");
+  return;
+}
+
+//undefinedにnullはいれるしその逆もできる
+let tmp: undefined = undefined;
+let tmpNull: null = null;
