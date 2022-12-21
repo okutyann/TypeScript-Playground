@@ -134,3 +134,10 @@ const cloth3: {
   color: "white",
   size: "miidum",
 };
+
+//関数に型を適応
+//パラメータは必ず型をつける（anyになってしまうから）
+//返り値もできるだけつける
+function add(num1: number, num2: number): number {
+  return num1 + num2;
+}
