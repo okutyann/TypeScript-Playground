@@ -117,8 +117,10 @@ const cloth2 = {
   size: clothSize2.large,
 };
 
+//typeエイリアス
+type ClothSize = "small" | "miidum" | "large";
 //Union型とLiteral型の組み合わせ
-let clothSize: "small" | "miidum" | "large" = "large";
+let clothSize: ClothSize = "large";
 
 const cloth = {
   color: "white",
@@ -127,7 +129,7 @@ const cloth = {
 
 const cloth3: {
   color: string;
-  size: "small" | "miidum" | "large";
+  size: ClothSize;
 } = {
   color: "white",
   size: "miidum",
