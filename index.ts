@@ -156,3 +156,9 @@ function sayHell2(): undefined {
 //undefinedにnullはいれるしその逆もできる
 let tmp: undefined = undefined;
 let tmpNull: null = null;
+
+//関数の型注釈
+const anotherAdd: (n1: number, n2: number) => number = add;
+
+const doubleNumber = (num: number): number => num * 2;
+const doubleNumber2: (numNum: number) => number = (numNum) => numNum * 2;
