@@ -162,3 +162,12 @@ const anotherAdd: (n1: number, n2: number) => number = add;
 
 const doubleNumber = (num: number): number => num * 2;
 const doubleNumber2: (numNum: number) => number = (numNum) => numNum * 2;
+
+//callback
+function doubleAndHandle(num: number, cd: (num: number) => number): void {
+  const doubleNum = cd(num * 2);
+  console.log(doubleNum);
+}
+doubleAndHandle(2, (doubleNum) => {
+  return doubleNum;
+});
