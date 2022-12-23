@@ -171,3 +171,19 @@ function doubleAndHandle(num: number, cd: (num: number) => number): void {
 doubleAndHandle(2, (doubleNum) => {
   return doubleNum;
 });
+
+let unknownInput: unknown;
+let anyInput: any;
+let text: string;
+unknownInput = "hello";
+unknownInput = 21;
+unknownInput = true;
+text = unknownInput;
+anyInput = "hello";
+anyInput = 21;
+anyInput = true;
+text = anyInput;
+
+if (typeof unknownInput === "string") {
+  text = unknownInput;
+}
