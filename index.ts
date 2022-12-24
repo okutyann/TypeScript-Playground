@@ -187,3 +187,10 @@ text = anyInput;
 if (typeof unknownInput === "string") {
   text = unknownInput;
 }
+
+//never型(バージョン３から出た新しい)→決して何も返さない
+function error(message: string): never {
+  throw new Error(message);
+  // while (true) {}
+}
+console.log(error("This is an error"));
