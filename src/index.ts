@@ -30,14 +30,14 @@ const person2: object = {
   age: 21,
 };
 //エラーでる
-console.log(person2.age);
+// console.log(person2.age);
 
 const fruits = ["Apple", "banana", "grap"];
 
 //予期していない型をいれない
 const fruits2: string[] = ["Apple", "banana", "grap"];
 fruits2.push("orange");
-fruits2.push(1);
+// fruits2.push(1);
 
 //any型は何でもあり
 const fruits3: any[] = ["Apple", "banana", "grap", 1];
@@ -103,7 +103,7 @@ let unionTypes: (number | string)[] = [21, "hello"];
 //constにした瞬間Literal型になる
 //下記の場合はappleしか扱えない
 const apple: "apple" = "apple";
-const orange: "orange" = "grap";
+// const orange: "orange" = "grap";
 
 //enum型
 enum clothSize2 {
@@ -178,7 +178,7 @@ let text: string;
 unknownInput = "hello";
 unknownInput = 21;
 unknownInput = true;
-text = unknownInput;
+// text = unknownInput;
 anyInput = "hello";
 anyInput = 21;
 anyInput = true;

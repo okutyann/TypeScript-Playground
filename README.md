@@ -48,16 +48,13 @@ let hello: string;
   tsconfig.json（typescript の設定ファイル）が作成される
 
   - 全てのファイルを一気にコンパイル
-  
-    ```tsc```
 
-  
+    `tsc`
+
   - 保存時に自動的に ts から js にコンパイル
-  
-    ```tsc --w```
-  
-  - 保存時に自動的に ts からじ js にコンパイル
-  
-   ```tsc --w```
 
- 
+    `tsc --w`
+
+  - 保存時に自動的に ts からじ js にコンパイル
+
+  `tsc --w`
