@@ -54,7 +54,3 @@ let hello: string;
   - 保存時に自動的に ts から js にコンパイル
 
     `tsc --w`
-
-  - 保存時に自動的に ts からじ js にコンパイル
-
-  `tsc --w`
